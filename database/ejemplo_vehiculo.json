@@ -1,0 +1,169 @@
+{
+  "_descripcion": "Documento JSON estructurado de ejemplo para un vehículo de Familia Parra. Este formato es el que la IA de RAG consumirá para responder consultas de clientes con precisión.",
+  "_version_schema": "1.0.0",
+
+  "id": "uuid-generado-automaticamente",
+  "tenant_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "tenant_nombre": "Familia Parra",
+
+  "vehiculo": {
+    "marca": "Fiat",
+    "modelo": "Cronos",
+    "version": "1.3 GSE Drive",
+    "anio": 2025,
+    "estado": "nuevo",
+    "color": "Blanco Alaska",
+    "puertas": 4
+  },
+
+  "precio": {
+    "monto": 28500000.00,
+    "moneda": "ARS",
+    "es_precio_desde": true,
+    "precio_usd_referencia": 23800,
+    "nota": "Precio de lista sujeto a actualización. Consultar valor vigente con asesor comercial."
+  },
+
+  "especificaciones_tecnicas": {
+    "motor": {
+      "denominacion": "1.3L Firefly GSE",
+      "cilindrada_cc": 1332,
+      "potencia_cv": 99,
+      "potencia_rpm": 5250,
+      "torque_nm": 127,
+      "torque_rpm": 3250,
+      "combustible": "nafta",
+      "alimentacion": "Inyección multipunto"
+    },
+    "transmision": {
+      "tipo": "manual",
+      "velocidades": 5,
+      "traccion": "Delantera"
+    },
+    "dimensiones": {
+      "largo_mm": 4363,
+      "ancho_mm": 1706,
+      "alto_mm": 1468,
+      "distancia_entre_ejes_mm": 2520,
+      "baul_litros": 525,
+      "tanque_litros": 48
+    },
+    "rendimiento": {
+      "consumo_ciudad_lkm": 8.5,
+      "consumo_ruta_lkm": 5.9,
+      "consumo_mixto_lkm": 7.2,
+      "velocidad_maxima_kmh": 175
+    },
+    "seguridad": {
+      "airbags": 2,
+      "abs": true,
+      "ebd": true,
+      "control_estabilidad": false,
+      "control_traccion": false,
+      "isofix": true,
+      "alerta_cinturon": true
+    },
+    "confort": {
+      "aire_acondicionado": true,
+      "direccion_asistida": "Eléctrica",
+      "alzacristales_electricos": "x4",
+      "cierre_centralizado": true,
+      "apertura_remota": true,
+      "computadora_abordo": true,
+      "volante_regulable": true
+    },
+    "multimedia": {
+      "pantalla_tactil": "7 pulgadas",
+      "android_auto": true,
+      "apple_carplay": true,
+      "bluetooth": true,
+      "usb": true,
+      "parlantes": 4
+    }
+  },
+
+  "stock": {
+    "cantidad_disponible": 3,
+    "colores_disponibles": ["Blanco Alaska", "Gris Scandium", "Rojo Modena"],
+    "ubicacion": "Av. Castro Barros 2500, Córdoba"
+  },
+
+  "financiacion": {
+    "planes_disponibles": [
+      {
+        "tipo": "Fiat Plan",
+        "entidad": "FCA Automobiles Argentina",
+        "cuotas": 84,
+        "tipo_cuota": "Cuota fija (ajuste semestral según precio de lista)",
+        "anticipo_porcentaje": 0,
+        "requisitos": ["DNI", "Último recibo de sueldo", "Servicio a nombre del titular"],
+        "observaciones": "Sin puntaje crediticio requerido. Sorteo y licitación mensual."
+      },
+      {
+        "tipo": "Crédito Prendario Bancario",
+        "entidad": "Bancos adheridos",
+        "cuotas": 60,
+        "tipo_cuota": "Cuota fija en pesos (TNA variable según banco)",
+        "anticipo_porcentaje": 20,
+        "requisitos": ["DNI", "Últimos 3 recibos de sueldo", "Buen historial crediticio"],
+        "observaciones": "Tasa preferencial para clientes Familia Parra."
+      }
+    ],
+    "acepta_usado_parte_pago": true,
+    "nota_llave_por_llave": "Tasamos tu usado en el acto. Descontamos el valor de la operación."
+  },
+
+  "imagenes": {
+    "principal": "/images/fiat-cronos.webp",
+    "galeria": [
+      "/images/fiat-cronos-frontal.webp",
+      "/images/fiat-cronos-lateral.webp",
+      "/images/fiat-cronos-interior.webp",
+      "/images/fiat-cronos-baul.webp"
+    ]
+  },
+
+  "metadata_ia": {
+    "texto_embedding": "Fiat Cronos 1.3 GSE Drive 2025 0km sedán compacto nafta manual 99CV blanco concesionario oficial Familia Parra Córdoba Argentina financiación cuotas fijas plan Fiat llave por llave baúl 525 litros pantalla táctil Android Auto Apple CarPlay económico bajo consumo",
+    "keywords_semanticas": [
+      "fiat", "cronos", "sedán", "0km", "nafta", "económico", "plan fiat",
+      "cuotas fijas", "financiación", "llave por llave", "córdoba", "familia parra",
+      "baúl grande", "bajo consumo", "pantalla táctil"
+    ],
+    "preguntas_frecuentes": [
+      {
+        "pregunta": "¿Cuánto sale el Fiat Cronos?",
+        "respuesta": "El Fiat Cronos 1.3 Drive arranca desde $28.500.000 ARS (precio de lista). Consultá con nuestro asesor por el precio actualizado y planes de financiación."
+      },
+      {
+        "pregunta": "¿Puedo entregar mi auto usado?",
+        "respuesta": "Sí, en Familia Parra aceptamos tu usado como parte de pago con el sistema Llave por Llave. Te lo tasamos en el acto en cualquiera de nuestras sucursales de Córdoba."
+      },
+      {
+        "pregunta": "¿Tiene financiación?",
+        "respuesta": "Sí, ofrecemos Fiat Plan en 84 cuotas sin anticipo y crédito prendario bancario en hasta 60 cuotas. Consultá las condiciones vigentes con un asesor."
+      },
+      {
+        "pregunta": "¿Cuánto gasta el Cronos?",
+        "respuesta": "El consumo mixto del Fiat Cronos 1.3 es de aproximadamente 7.2 litros cada 100km. Es uno de los más eficientes del segmento."
+      }
+    ],
+    "categoria_ia": "sedan_compacto",
+    "segmento_mercado": "entrada",
+    "competidores_directos": ["Volkswagen Virtus MSI", "Chevrolet Onix Plus", "Peugeot 208 Sedán"],
+    "puntos_venta_clave": [
+      "Sedán más vendido de Argentina",
+      "Baúl de 525 litros, el más grande del segmento",
+      "Bajo costo de mantenimiento y repuestos accesibles",
+      "Financiación sin anticipo con Fiat Plan",
+      "Conectividad completa con Android Auto y Apple CarPlay"
+    ]
+  },
+
+  "contacto_venta": {
+    "sucursal": "Casa Central — Av. Castro Barros 2500, Córdoba",
+    "whatsapp": "5493515551234",
+    "mensaje_sugerido": "Hola Familia Parra 🚗 Vi el Fiat Cronos 1.3 Drive 2025 en su catálogo web y me interesa. ¿Podrían enviarme información sobre planes de financiación disponibles en Córdoba? Muchas gracias.",
+    "horario_atencion": "Lunes a Viernes 08:30-18:30 | Sábados 09:00-13:00"
+  }
+}
